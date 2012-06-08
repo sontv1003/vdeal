@@ -3,7 +3,7 @@
 -- Server version:               5.5.16-log - MySQL Community Server (GPL)
 -- Server OS:                    Win32
 -- HeidiSQL version:             7.0.0.4053
--- Date/time:                    2012-06-08 23:47:08
+-- Date/time:                    2012-06-09 00:53:02
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -66,7 +66,7 @@ CREATE TABLE IF NOT EXISTS `categories` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
--- Dumping data for table vdeal.categories: ~3 rows (approximately)
+-- Dumping data for table vdeal.categories: ~4 rows (approximately)
 /*!40000 ALTER TABLE `categories` DISABLE KEYS */;
 INSERT INTO `categories` (`id`, `name`, `description`, `sort_order`, `is_static_page`, `status`) VALUES
 	(1, 'Realestate', NULL, 0, 0, 1),
