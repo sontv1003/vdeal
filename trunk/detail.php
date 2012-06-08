@@ -1,0 +1,1 @@
+DETAIl PAGE
