@@ -1,9 +1,6 @@
 <?php
-    //require_once('includes/config.php');
     $result = mysql_query("SELECT * FROM areawises WHERE status = 1 order by sort_order");
 ?>
-
-
 <ul class="area_list">
 <?php  while ($row = mysql_fetch_object($result)): ?>
     
