@@ -1,6 +1,6 @@
 <?php
     $page = (!empty($_GET['page'])) ? $_GET['page'] : '';
-    
+
     switch($page) {
         case 'static_page': 
             include 'static_page.php';
@@ -15,5 +15,5 @@
             include 'home.php';
             break;
     }
-    
+
 ?>
