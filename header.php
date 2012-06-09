@@ -1,4 +1,11 @@
-<div class="banner">BANNER</div>
+<div class="banner">
+    <div class="logo left"><a href="index.php"><img src="images/logo.png" /></a></div>
+    <div class="iconConnect">
+        <a href="#"><img src="images/facebook.png" /></a>
+        <a href="#"><img src="images/twitter.png" /></a>
+    </div>
+    <div class="clear"></div>
+</div>
 <ul id="menu_header">
     <li><a href="index.php">HOME</a></li>
 <?php 
@@ -11,6 +18,6 @@ while($row = mysql_fetch_object($result)):
         $filter = "cat_list";
     endif;
 ?>
-    <li><a href="index.php?page=<?=$filter?>&cat_id=<?=$row->id?>"><?php echo $row->name;?></a></li>
+    <li><a href="index.php?page=<?=$filter?>&cat_id=<?=$row->id?>"><?php echo strtoupper($row->name);?></a></li>
 <?php endwhile;?>
 </ul>
