@@ -20,10 +20,9 @@ body {
     min-height: 300px;
 }
 #content {    
-    width: 590px;
+    width: 596px;
     text-align: left;
     min-height: 300px;
-    border: 1px solid #ccc;
     margin-bottom: 30px;
 }
 #content_left {
@@ -182,4 +181,82 @@ ul.area_list li.active a {
     font-size: 12px;
     font-weight: bold;
     margin-top: 10px;
+}
+h3.title {
+    font-family: WebfontRegular;
+    font-size: 16px;
+    font-weight: normal;
+    color: #292929;
+}
+.content_box {
+    width: 100%;
+    min-height: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: justify;
+}
+.post {
+    width: 100%;
+    padding-bottom: 10px;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.post .img {
+    width: 190px;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background: #ccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.post .summary {
+    width: 390px;
+    text-align: justify;        
+    
+}
+.post span {
+    display: block;
+}
+.post .summary_text {
+    
+}
+.post .detail {
+    text-align: right;
+}
+.post .title {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+}
+.post .title a {
+    color: #2760AF;
+}
+.post .title a:hover {
+    text-decoration: underline;
+    color: #365F81;
+}
+.post span a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #980600;
+}
+.post span a:hover {
+    color: #ccc;
+}
+.error {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+h3.post_title {
+    color: #9B1103;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }

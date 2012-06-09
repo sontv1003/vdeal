@@ -1,4 +1,13 @@
 <?php
+    /**
+     * DEFINE CONSTANT  
+     */
+    define("CONTACT_EMAIL", "transontt@gmail.com");
+    
+    
+    /**
+     * Config HOST  
+     */
     $host = 'localhost';
     $user = 'root';
     $pass = '';

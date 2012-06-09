@@ -1,1 +1,1 @@
-TRANG CHU
+<h3 class="title"></h3>
