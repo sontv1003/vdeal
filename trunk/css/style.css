@@ -88,6 +88,9 @@ ul#menu_header li a{
 ul#menu_header li a:hover{ 
     background:  url('../images/hov-1.png') repeat-x;
 }
+ul#menu_header li.active a {
+    background:  url('../images/hov-1.png') repeat-x;
+}
 .box {
     background: #FFEEB7;
     -webkit-border-radius: 5px;
@@ -146,7 +149,9 @@ ul.area_list li a{
 ul.area_list li a:hover {
     color: #c00;
 }
-
+ul.area_list li.active a {
+    color: #c00;
+}
 .footer_menu {
     text-align: center;
     width: 100%;
