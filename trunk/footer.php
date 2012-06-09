@@ -13,6 +13,7 @@
     ?>
         <li><a href="index.php?page=<?=$filter?>&cat_id=<?=$row->id?>"><?php echo $row->name;?></a></li>
     <?php endwhile;?>
+        <li><a href="index.php?page=contact&cat_id=0">Contact Us</a></li>
     </ul>
     <div class="clear"></div>
     <span>Copyright &copy; 2012 vdeal.asia</span>
