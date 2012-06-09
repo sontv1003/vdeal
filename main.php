@@ -11,6 +11,9 @@
         case 'detail': 
             include 'detail.php';
             break;        
+        case 'contact': 
+            include 'contact.php';
+            break;        
         default: 
             include 'home.php';
             break;
