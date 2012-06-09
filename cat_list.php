@@ -16,7 +16,7 @@
             <span class="summary_text">                
                 <?=$row->summary?>
             </span>
-            <span class="detail"><a href="index.php?page=detail&cat_id=<?=$cat_id?>&project_id=<?=$row->id?>">Click for details &RightArrow;</a></span>
+            <span class="detail"><a href="index.php?page=detail&cat_id=<?=$cat_id?>&project_id=<?=$row->id?>">Click for details...</a></span>
         </div>
         <div class="clear"></div>
     </div>
