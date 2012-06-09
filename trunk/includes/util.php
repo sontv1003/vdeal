@@ -22,5 +22,12 @@ Class Util {
         return true;
     }
     
+    function getFileNameImage($file_name) {
+        if(!empty($file_name)) {
+            return $file_name;
+        }
+        
+        return 'no-images.jpg';
+    }
 }
 ?>

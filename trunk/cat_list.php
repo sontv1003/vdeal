@@ -9,7 +9,7 @@
     <?php while($row = mysql_fetch_object($result)):?>
     <div class="post">
         <div class="left img">
-            <a href="index.php?page=detail&cat_id=<?=$cat_id?>&project_id=<?=$row->id?>"><img src="images/uploads/<?=$row->picture?>" width="180px"/></a>
+            <a href="index.php?page=detail&cat_id=<?=$cat_id?>&project_id=<?=$row->id?>"><img src="images/uploads/<?=$Util->getFileNameImage($row->picture)?>" width="180px"/></a>
             <label class="title"><a href="index.php?page=detail&cat_id=<?=$cat_id?>&project_id=<?=$row->id?>"><?=$row->name?></a></label>
         </div>
         <div class="right summary">
