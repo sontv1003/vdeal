@@ -18,4 +18,7 @@
     }
     mysql_select_db("vdeal",$conn);
     
+    
+    $ROOT_URL ="http://localhost";
+    
 ?>
