@@ -45,8 +45,10 @@
             $url = $Util->remove_querystring_var($url,'p');
             echo 'Page&nbsp;';
             for($i=1;$i <= $num_page;$i++) {
-                
-                $active = ($paginate == $i)? 'class="active"':'';
+                $active = '';
+                if(($i== 1 && empty($paginate)) || $paginate == $i)
+                    $active = 'class="active"';
+
                 echo '<span '. $active .'><a href="'.$url.'&p='.$i.'">'.$i.'</a></span>';
             }
         }
