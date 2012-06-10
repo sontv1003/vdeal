@@ -49,8 +49,8 @@ $hostname = $Util->getServerName();
         </section><!-- end of #container_12 -->
     </section><!-- end of #container -->
 
-    <script src="js/ui_calls.js" type="text/javascript"></script>
-    <script src="js/scripts.js" type="text/javascript"></script>
+    <script src="common/js/ui_calls.js" type="text/javascript"></script>
+    <script src="common/js/scripts.js" type="text/javascript"></script>
 </body>
 
 </html>

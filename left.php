@@ -11,6 +11,5 @@
     <li>Areawise Listing</li>
 <?php  while ($row = mysql_fetch_object($result)): ?>
     <li <?php echo ($selected == $row->id) ? 'class="active"':''?>><a href="<?=$url?>&area_id=<?php echo $row->id;?>"><?php echo $row->name;?></a></li>
-    
 <?php endwhile; ?>
 </ul>
