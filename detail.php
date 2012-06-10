@@ -1,5 +1,5 @@
 <?php   
-    $pid = (isset($_GET['project_id'])) ? $_GET['project_id']: '';
+    $pid = (isset($_GET['pid'])) ? $_GET['pid']: '';
     $result = mysql_query('SELECT * FROM projects WHERE status = 1 AND id = '.$pid);
 ?>
 <div class="content_box">

@@ -20,21 +20,21 @@ body {
     min-height: 300px;
 }
 #content {    
-    width: 595px;
+    width: 630px;
     text-align: left;
     min-height: 300px;
     margin-bottom: 30px;
 }
 #content_left {
-    width: 205px;
+    width: 195px;
     min-height: 300px;
 }
 #content_right {
-    width: 190px;
+    width: 175px;
     min-height: 300px;
 }
 .content_box {
-    width: 100%;
+    width: 97%;
     min-height: 300px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -90,17 +90,22 @@ ul#menu_header li {
 ul#menu_header li a{
     text-decoration: none; 
     color: #fff;
-    text-shadow: 1px 0.5px #ccffcc;
+    text-shadow: 1px 0.5px #ccc;
     font-size: 15px;
-/*    font-weight: bold;*/
     padding: 4px 10px;
     
 }
 ul#menu_header li a:hover{ 
     background:  url('../images/hov-1.png') repeat-x;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 ul#menu_header li.active a {
     background:  url('../images/hov-1.png') repeat-x;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 .box {
     background: #FFEEB7;
@@ -251,6 +256,9 @@ h3.title {
 .post:hover .title a{
     color: #fff;
 }
+.post img {
+    border: 1px solid #c6c6c6;
+}
 .post .img {
     width: 180px;
     overflow: hidden;
@@ -310,4 +318,66 @@ h3.post_title {
     font-weight: bold;
     margin-bottom: 10px;
     word-wrap: break-word;
+}
+.post_feature {
+    width: 180px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    background: #f5f5f2;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    margin-right: 10px;
+}
+.post_feature img {
+    border: 1px solid #C6C6C6;
+}
+.post_feature .title {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+}
+.post_feature .title a {
+    
+    color: #000;
+    font-size: 12px;
+    line-height: 12px;
+    text-decoration: none;
+    
+}
+
+.post_feature:hover {
+    background:#000;
+}
+.post_feature:hover .title a{
+    color: #fff;
+}
+.cat {
+    margin: 20px 0px 30px 0px;
+}
+#paginate {
+    margin-top: 10px;
+}
+#paginate span {
+    display: inline-block;
+}
+#paginate span  a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0px 5px;
+    margin-right: 5px;
+    background: #000;
+}
+#paginate span.active a {
+    background: orange;
+    color: #000;
+}
+#paginate span  a:hover{
+    background: orange;
+    color: #000;
 }

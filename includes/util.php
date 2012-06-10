@@ -40,5 +40,24 @@ Class Util {
         
         return 'no-images.jpg';
     }
+    
+    function RemoveParameterFromUrl($param_rm, $query='') {
+        empty($query)? $query=$_SERVER['QUERY_STRING'] : '';
+        echo $query;
+        parse_str($query, $params);
+        echo '<pre>' . print_r($params, true) . '</pre>';
+        unset($params[$param_rm]);
+        $newquery = '';
+        foreach($params as $k => $v)
+            $newquery .= '&'.$k.'='.$v;
+        
+        return substr($newquery,1);
+    }
+    
+    function remove_querystring_var($url, $key) { 
+    $url = preg_replace('/(.*)(?|&)' . $key . '=[^&]+?(&)(.*)/i', '$1$2$4', $url . '&'); 
+    $url = substr($url, 0, -1); 
+    return $url; 
+    }
 }
 ?>
