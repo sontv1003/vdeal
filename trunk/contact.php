@@ -9,6 +9,7 @@
 </div>
 <div class="contact_box">
     <label>Contact Form</label>
+    <div id="message"></div>
     <div id="contact_form">
     <form id="frmContact" method="POST">
         <input type="text" id="txtName" name="name" value="" placeholder="Name" class="required"/>

@@ -35,7 +35,13 @@
             type: "POST",
             data: $('form').serialize(),
             success: function(data) {
-                alert(data);
+                if(data == 'success') {
+                    $('#message').addClass('success');
+                    $('#message').text('Send mail is successful!');
+                }else if(data == 'fail') {
+                    $('#message').addClass('warn');
+                    $('#message').text('Send mail is failed!');
+                }
             }
         });
     })
