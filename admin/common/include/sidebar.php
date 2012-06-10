@@ -1,16 +1,11 @@
 <section class="sidebar">
 			<a class="logo" href="index.html"></a>
 			<ul id="menu">
-				<li><a href="index.html" class="active">Dashboard<span class="icon1"></span></a></li>
-				<li><a href="#">Plugins<span class="icon6"></span></a>
+				<li><a href="index.php" class="active">Dashboard<span class="icon1"></span></a></li>
+				<li><a href="#">Category<span class="icon6"></span></a>
 					<ul>	 
-						<li><a href="calendar.html">Advanced calendar</a></li>
-						<li><a href="file_explorer.html">File explorer</a></li>
-						<li><a href="charts.html">Charts</a></li>
-						<li><a href="tables.html">Data Tables</a></li>
-						<li><a href="lightbox.html">LightBox Evolution</a></li>
-						<li><a href="alerts.html">Alert messages</a></li>
-						<li><a href="dialogs.html">Fallr - Dialogs, modal boxes...</a></li>
+						<li><a href="index.php?page=category_list">Category list</a></li>
+						<li><a href="index.php?page=category_add">Add category</a></li>
 					</ul>
 				</li>
 				<li><a href="#">Example forms<span class="icon2"></span></a>
