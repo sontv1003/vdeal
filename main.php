@@ -2,10 +2,10 @@
     $page = (!empty($_GET['page'])) ? $_GET['page'] : '';
 
     switch($page) {
-        case 'static_page': 
+        case 'static': 
             include 'static_page.php';
             break;
-        case 'cat_list': 
+        case 'category': 
             include 'cat_list.php';
             break;
         case 'detail': 

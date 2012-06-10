@@ -16,9 +16,9 @@ $result = mysql_query('SELECT * FROM categories WHERE status = 1 order by sort_o
 while($row = mysql_fetch_object($result)):
     $filter = null;
     if($row->is_static_page == 1):
-        $filter = "static_page";
+        $filter = "static";
     else:    
-        $filter = "cat_list";
+        $filter = "category";
     endif;
 ?>
     <li <?php echo ($selected == $row->id)?'class="active"':'';?>><a href="index.php?page=<?=$filter?>&cid=<?=$row->id?>"><?php echo strtoupper($row->name);?></a></li>
