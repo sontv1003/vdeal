@@ -42,7 +42,7 @@ $hostname = $Util->getServerName();
             </section><!-- end of #page_content -->
         </section><!-- end of #container_12 -->
     </section><!-- end of #container -->
-    <script src="<?php echo $hostname . "/vdeal-project/admin/common" ?>/js/ui_calls.js" type="text/javascript"></script>
-    <script src="<?php echo $hostname . "/vdeal-project/admin/common" ?>/js/scripts.js" type="text/javascript"></script>
+    <script src="<?php echo $hostname . "/admin/common" ?>/js/ui_calls.js" type="text/javascript"></script>
+    <script src="<?php echo $hostname . "/admin/common" ?>/js/scripts.js" type="text/javascript"></script>
 </body>
 </html>

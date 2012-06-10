@@ -19,14 +19,13 @@
 						<li><a href="forms_validation.html">Forms validation</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Icons<span class="icon7"></span></a>
+				<li><a href="#">Icons<span class="icon5"></span></a>
 					<ul>
 						<li><a href="glyphish_icons.html">Glyphish icons</a></li>
 						<li><a href="fugue_icons.html">Fugue icons</a></li>
 					</ul>
 				</li>
-				<li><a href="gallery.html">Image gallery<span class="icon3"></span></a></li>
-				<li><a href="grid.html">Grid<span class="icon8"></span></a></li>
-				<li><a href="typography.html">Typography<span class="icon10"></span></a></li>
+				<li><a href="<?php echo $hostname?>/admin/login.php">Logout<span class="icon7"></span></a></li>
+				
 			</ul><!--End of #menu-->
 		</section><!-- End of .sidebar -->
