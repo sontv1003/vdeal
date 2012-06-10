@@ -18,3 +18,4 @@
     <div class="clear"></div>
     <span>Copyright &copy; 2012 vdeal.asia</span>
 </div>
+<?php mysql_close($conn);?>
