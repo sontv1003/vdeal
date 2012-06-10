@@ -11,6 +11,7 @@
     <label>Contact Form</label>
     <div id="message"></div>
     <div id="contact_form">
+    <div class="loading"></div>
     <form id="frmContact" method="POST">
         <input type="text" id="txtName" name="name" value="" placeholder="Name" class="required"/>
         <input type="text" id="txtMobile" name="mobile" value="" placeholder="Mobile"/>
