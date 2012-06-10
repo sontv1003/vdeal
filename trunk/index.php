@@ -11,7 +11,7 @@ $Util = new Util();
         <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
         <script type="text/javascript" src="js/vdeal.js"></script>
     </head>
-    <body>
+    <body> 
         <div id="wrap">
             <div id="header"><?php include 'header.php';?></div>            
             <div id="main">

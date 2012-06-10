@@ -8,7 +8,7 @@
 </div>
 <ul id="menu_header">
 <?php 
-$selected = (isset($_GET['cat_id'])) ? $_GET['cat_id']: '';
+$selected = (isset($_GET['cid'])) ? $_GET['cid']: '';
 ?>
     <li <?php echo ($selected == '')?'class="active"':'';?> ><a href="index.php">HOME</a></li>
 <?php    
@@ -21,7 +21,7 @@ while($row = mysql_fetch_object($result)):
         $filter = "cat_list";
     endif;
 ?>
-    <li <?php echo ($selected == $row->id)?'class="active"':'';?>><a href="index.php?page=<?=$filter?>&cat_id=<?=$row->id?>"><?php echo strtoupper($row->name);?></a></li>
+    <li <?php echo ($selected == $row->id)?'class="active"':'';?>><a href="index.php?page=<?=$filter?>&cid=<?=$row->id?>"><?php echo strtoupper($row->name);?></a></li>
 <?php endwhile;?>
-    <li <?php echo ($selected === 0)?'class="active"':'';?>><a href="index.php?page=contact&cat_id=0">CONTACT US</a></li>
+    <li <?php echo ($selected === 0)?'class="active"':'';?>><a href="index.php?page=contact&cid=0">CONTACT US</a></li>
 </ul>

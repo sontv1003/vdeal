@@ -1,5 +1,5 @@
 <?php
-    $cat_id = (isset($_GET['cat_id'])) ? $_GET['cat_id']: '';
+    $cat_id = (isset($_GET['cid'])) ? $_GET['cid']: '';
     $result = mysql_query('SELECT * FROM categories WHERE status = 1 AND is_static_page = 1 AND id='.$cat_id);    
 ?>
 
