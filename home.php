@@ -18,7 +18,14 @@ while($cat = mysql_fetch_object($cat_query)):
     </div>
     <?php else: ?>
     
-    
-    
     <?php endif; ?>
 <?php endwhile; ?>
+    <div class="contact_home_box">
+        <label>V Deal Properties</label>
+        <label>Plot No.317, Door No.7</label>
+        <label>4th Main Road, Kamarajar nagar,</label>
+        <label>Tiruvanmiyur, Chennai-60041</label>
+        <label>Phone: 004 45122122 / 45022122</label>
+        <label>Mobile: +91 9940008931 / 9940008934 / 9940008940</label>
+        <label>Email: <a href="mailto:info@vdeal.asia">info@vdeal.asia</a>, <a href="mailto:vdealproperties@gmail.com">vdealproperties@gmail.com</a></label>
+    </div>
