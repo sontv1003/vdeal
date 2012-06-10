@@ -3,12 +3,16 @@
 require_once('includes/config.php'); 
 require_once('includes/util.php'); 
 $Util = new Util();
+$cid = (isset($_GET['cid'])) ? $_GET['cid'] : ''; 
+$page_title = $Util->getTitle($cid);
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Vdeal Properties">
         <link  rel="stylesheet" type="text/css" href="css/style.css" />
         <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <title>VDeal Properties - <?php echo $page_title?></title>
     </head>
     <body> 
         <div id="wrap">
