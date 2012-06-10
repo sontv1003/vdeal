@@ -459,3 +459,15 @@ h3.post_title {
 .contact_box .error {
     border: 1px solid red;
 }
+.contact_box #message {
+    font-size: 15px;
+    font-weight: bold;
+}
+.contact_box .success {
+    color: #008700;
+    margin-bottom: 10px;
+}
+.contact_box .warn {
+    color: red;
+    margin-bottom: 10px;
+}
