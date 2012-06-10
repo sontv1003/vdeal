@@ -1,4 +1,4 @@
-<div class="box_right box">
+<div class="box_right">
     <div class="item">
         <table width="100%">
             <tr>
