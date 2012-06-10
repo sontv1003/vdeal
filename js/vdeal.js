@@ -29,18 +29,19 @@
             $('#txtComment').addClass('error');
             return false;
         }
-        
+        $('.loading').show();
         $.ajax({
             url: "send_mail.php",
             type: "POST",
             data: $('form').serialize(),
             success: function(data) {
+                $('.loading').hide();
                 if(data == 'success') {
                     $('#message').addClass('success');
-                    $('#message').text('Send mail is successful!');
+                    $('#message').html('Send mail is successful!');
                 }else if(data == 'fail') {
                     $('#message').addClass('warn');
-                    $('#message').text('Send mail is failed!');
+                    $('#message').html('Send mail is failed!');
                 }
             }
         });
