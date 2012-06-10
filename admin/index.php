@@ -32,9 +32,16 @@ $hostname = $Util->getServerName();
                         <div class="block">
                             <div class="block_in">
                                 <div class="grid_12">
-                                    hjh
-                                </div>
-                                
+                                    <?php 
+                                    $page = (isset($_GET['page']))? $_GET['page'] : '';
+                                    if(!empty($page)) {
+                                        include $page.'.php';
+                                    } else {
+                                        include 'home.php';
+                                    }
+                                    
+                                    ?>
+                                </div>                                
                             </div>
                         </div>
                     </div>
