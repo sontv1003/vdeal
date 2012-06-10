@@ -30,7 +30,7 @@ Class Util {
         } else {
         $pageURL .= $_SERVER["SERVER_NAME"];
         }
-        return $pageURL;
+        return $pageURL."/vdeal-project";
     }
     
     function getFileNameImage($file_name) {
@@ -61,6 +61,10 @@ Class Util {
              
              return 'Home';
         }
+    }
+    
+    function encryptPassword($str){
+        return md5("vdeal_SonDepTrai".$str);
     }
 }
 ?>
