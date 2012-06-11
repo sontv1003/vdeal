@@ -16,67 +16,67 @@ class objProject {
     }
 
     public function setID($id) {
-        $this->$id = $id;
+        $this->id = $id;
     }
 
     public function setCateID($cat_id) {
-        $this->$cat_id = $cat_id;
+        $this->cat_id = $cat_id;
     }
 
     public function setAreaID($area_id) {
-        $this->$area_id = $area_id;
+        $this->area_id = $area_id;
     }
 
     public function setName($name) {
-        $this->$name = $name;
+        $this->name = mysql_real_escape_string($name);
     }
 
     public function setPicture($picture) {
-        $this->$picture = $picture;
+        $this->picture = mysql_real_escape_string($picture);
     }
 
     public function setSummary($summary) {
-        $this->$summary = $summary;
+        $this->summary = mysql_real_escape_string($summary);
     }
 
     public function setDescription($description) {
-        $this->$description = $description;
+        $this->description = mysql_real_escape_string($description);
     }
 
     public function setStatus($status) {
-        return $this->$status;
+        $this->status = mysql_real_escape_string($status);
     }
 
     public function getID() {
-        return $this->$id;
+        return $this->id;
     }
 
     public function getCateID() {
-        return $this->$cat_id;
+        return $this->cat_id;
     }
 
     public function getAreaID() {
-        return $this->$area_id;
+        return $this->area_id;
     }
 
     public function getName() {
-        return $this->$name;
+        return $this->name;
     }
 
     public function getPicture() {
-        return $this->$picture;
+        return $this->picture;
     }
 
     public function getSummary() {
-        return $this->$summary;
+        return $this->summary;
     }
 
     public function getDescription() {
-        return $this->$description;
+        return $this->description;
     }
 
     public function getStatus() {
-        return $this->$status;
+        return $this->status;
     }
 
 }

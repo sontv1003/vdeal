@@ -1,6 +1,8 @@
 <?php
+
 class authentication {
-    function doLogin($username, $password, $Util,$alert) {
+
+    function doLogin($username, $password, $Util, $alert) {
         $passwordMD5 = $Util->encryptPassword($password);
         $username = mysql_real_escape_string($username);
         $result = mysql_query("SELECT * FROM admin WHERE username='" . $username . "' AND password='" . $passwordMD5 . "' AND status = 1");
@@ -12,11 +14,17 @@ class authentication {
             echo $alert->getMessage("error", "Username or password is invalid!");
         }
     }
+
     function preventUserNotLogin($Util) {
-        session_start();
+        if (!isset($_SESSION)) {
+            session_start();
+        }
+
         if (isset($_SESSION['admin']) != true) {
             header("location:" . $Util->getServerName() . "/admin/login.php");
         }
     }
+
 }
+
 ?>
