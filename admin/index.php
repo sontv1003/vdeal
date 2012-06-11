@@ -15,7 +15,7 @@ $hostname = $Util->getServerName();
         <?php
         include '../admin/common/include/header.php';
         ?>
-       
+
     </head>
     <body>
         <?php include '../admin/common/include/sidebar.php'; ?>
@@ -24,26 +24,15 @@ $hostname = $Util->getServerName();
             <section id="page_content" class="page_content">				
                 <div class="grid_12">
                     <div class="box">
-                        <h2>
-                            Statistics
-                            <span class="l"></span><span class="r"></span>
-                        </h2>
-                        <div class="hide"><span class="s">Show</span><span class="h">Hide</span></div>
-                        <div class="block">
-                            <div class="block_in">
-                                <div class="grid_12">
-                                    <?php 
-                                    $page = (isset($_GET['page']))? $_GET['page'] : '';
-                                    if(!empty($page)) {
-                                        include $page.'.php';
-                                    } else {
-                                        include 'home.php';
-                                    }
-                                    
-                                    ?>
-                                </div>                                
-                            </div>
-                        </div>
+                        <?php
+                        $page = (isset($_GET['page'])) ? $_GET['page'] : '';
+                        if (!empty($page)) {
+                            include $page . '.php';
+                        } else {
+                            include 'home.php';
+                        }
+                        ?>
+
                     </div>
                 </div><!-- End of grid_12 -->
             </section><!-- end of #page_content -->
